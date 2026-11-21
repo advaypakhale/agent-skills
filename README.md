@@ -4,6 +4,7 @@ Skills in the Agent Skills format: each directory is one skill, and the `SKILL.m
 
 ## Skills
 
+- [cad](cad/SKILL.md) — modular, parametric CadQuery modeling and STEP reverse engineering
 - [no-crap-docs](no-crap-docs/SKILL.md) — writing standards for code comments, docstrings, and docs
 - [no-leaks](no-leaks/SKILL.md) — strips conversation and process residue out of code and docs
 

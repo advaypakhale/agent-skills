@@ -61,11 +61,41 @@ State facts in the order the reader needs them. All of the following are writing
 - Grand self-assessment: "meant to be complete", "batteries included", "blazingly fast"
 - Lecturing the reader: "for new features, fork it"
 
-The same content, written properly: "It never needs root, and everything it does to the target can be undone by deleting that one directory."
+The same content, written properly: "It never needs root. Deleting that one directory undoes everything it does to the target."
 
 Taglines and descriptions say what the thing does, verb first: "Deploy Neovim and your config to remote development environments", not "Your entire Neovim setup, in one directory on any ssh host or container".
 
 Scope and status statements stay humble: "aims to stay small … unlikely to be accepted", never "is complete".
+
+## Sentences
+
+These rules apply to chat replies as well as files. They apply to a reply that explains a writing fault.
+
+Put one fact in each sentence. A second fact joined on with a comma gets its own sentence. The joining word varies: "X, and Y", "X, so Y", "X, which Y", "X, from Y".
+
+Make the thing that acts the subject of the sentence. A clause that starts with "whose", "which" or "that" puts the actor behind another noun.
+
+Use the literal word. Write "added", not "bolted on". Write "no core accesses the block", not "nobody reads it".
+
+Check a claim against every case it covers. A cause that is true of one result is often false of the second result in the same sentence.
+
+Choose the subject and the length of a sentence by the fact it states. Do not choose them to match the sentence before it or to end on a strong phrase.
+
+Rewrite this kind:
+
+> The new build is 24% slower on the first benchmark and 4% slower on the second, from updates sent to copies nobody reads again.
+
+The cause is joined on with a comma. "Nobody reads" is not literal. The cause is true of the first benchmark only.
+
+This rewrite still fails:
+
+> On the first benchmark the updates go to caches whose cores do not access the block again.
+
+The cores act, but "updates" is the subject.
+
+Write this:
+
+> The new build is 24% slower on the first benchmark and 4% slower on the second. On the first benchmark the other cores do not access these blocks again. Every update sent to them is wasted. On the second benchmark the other cores access the blocks rarely. Most updates are still wasted.
 
 ## Editing existing prose
 
